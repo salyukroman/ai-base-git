@@ -19,7 +19,7 @@ export default function Footer() {
             <Mail size={24} />
             <span>Email</span>
           </a>
-          <a href="https://www.linkedin.com/in/роман-салюк-28547a104" target="_blank" rel="noopener noreferrer" className={`${styles.socialBtn} glass`}>
+          <a href="https://www.linkedin.com/in/roman-saliuk" target="_blank" rel="noopener noreferrer" className={`${styles.socialBtn} glass`}>
             <ArrowUpRight size={24} />
             <span>LinkedIn</span>
           </a>
