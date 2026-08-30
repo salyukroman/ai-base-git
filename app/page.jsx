@@ -84,7 +84,7 @@ export default function Home() {
               
               <motion.div variants={staggerItem} className={styles.heroActions}>
                 <a href="#cases" className={styles.btnPrimaryLg}>Get Started <ArrowRight size={16} /></a>
-                <a href="mailto:saliyk.roman@gmail.com" className={styles.btnSecondaryLg}>Book a Demo</a>
+                <a href="mailto:salyuk.roman@gmail.com" className={styles.btnSecondaryLg}>Book a Demo</a>
               </motion.div>
             </motion.div>
 

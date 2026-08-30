@@ -15,7 +15,7 @@ export default function Footer() {
             <MessageCircle size={24} />
             <span>Telegram</span>
           </a>
-          <a href="mailto:saliyk.roman@gmail.com" className={`${styles.socialBtn} glass`}>
+          <a href="mailto:salyuk.roman@gmail.com" className={`${styles.socialBtn} glass`}>
             <Mail size={24} />
             <span>Email</span>
           </a>
