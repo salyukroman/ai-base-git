@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# LLM Crawlers & AI Search Engines (GEO - Generative Engine Optimization)
+# Ми явно дозволяємо цим ботам сканувати сайт, щоб нейромережі 
+# могли використовувати контекст нашого сайту у своїх відповідях
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Omgili
+Allow: /
+User-agent: Omgilibot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://www.saliukautomation.online/sitemap.xml
