@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="uk" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bento Section Redesign - 10 Варіантів</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            darkBg: '#09090b',
+            cardBg: '#18181b',
+            accent: '#3b82f6',
+            accentPurple: '#8b5cf6'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #09090b;
+      color: #f8fafc;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .variant-wrapper {
+      padding: 4rem 1rem;
+      border-bottom: 1px dashed #333;
+    }
+
+    .variant-title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #94a3b8;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* V1 Glassmorphism */
+    .v1-glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* V3 Neumorphism */
+    .v3-neu {
+      background: #09090b;
+      box-shadow: 8px 8px 16px #040405, -8px -8px 16px #0e0e11;
+      border-radius: 20px;
+    }
+
+    /* V5 Mesh Gradient */
+    .v5-mesh {
+      background-image: radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
+    }
+
+    /* V7 Cyberpunk */
+    .v7-cyber {
+      border: 2px solid #00ff00;
+      background: #000;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body class="antialiased">
+
+  <div class="text-center py-10">
+    <h1 class="text-4xl font-bold mb-4">10 Варіантів Редизайну Bento-секції</h1>
+    <p class="text-gray-400">Оберіть стиль, який вам найбільше подобається, і я перенесу його у наш Next.js проєкт.</p>
+  </div>
+
+  <!-- Variant 1: Premium Glassmorphism (Apple Style) -->
+  <div class="variant-wrapper relative overflow-hidden">
+    <div
+      class="absolute inset-0 bg-blue-500/10 blur-[100px] rounded-full w-[500px] h-[500px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+    </div>
+    <div class="variant-title">Варіант 1: Premium Glassmorphism (Apple Style)</div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+      <div class="v1-glass rounded-3xl p-8 col-span-1 md:col-span-2 hover:bg-white/[0.05] transition-all">
+        <h2 class="text-3xl font-bold mb-4">Про мене та мій підхід</h2>
+        <p class="text-gray-400 text-lg mb-8 leading-relaxed">Я працюю на перетині no-code та штучного інтелекту, щоб
+          перетворювати складні ручні процеси на повністю автономні та надійні воркфлоу.</p>
+        <div class="flex gap-4">
+          <div class="bg-black/40 p-4 rounded-2xl flex-1 border border-white/5"><span
+              class="text-blue-400 font-bold block mb-1">1. Аудит</span><span class="text-sm text-gray-400">Дослідження
+              «вузьких місць»</span></div>
+          <div class="bg-black/40 p-4 rounded-2xl flex-1 border border-white/5"><span
+              class="text-purple-400 font-bold block mb-1">2. Проєктування</span><span
+              class="text-sm text-gray-400">Архітектура та черги</span></div>
+          <div class="bg-black/40 p-4 rounded-2xl flex-1 border border-white/5"><span
+              class="text-green-400 font-bold block mb-1">3. Розробка</span><span class="text-sm text-gray-400">n8n,
+              API, Prompts</span></div>
+        </div>
+      </div>
+      <div
+        class="v1-glass rounded-3xl p-8 col-span-1 flex flex-col justify-between hover:bg-white/[0.05] transition-all">
+        <h3 class="text-xl font-bold mb-6 text-white/90">Ключовий стек</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-gray-200">n8n</span>
+          <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-gray-200">OpenAI</span>
+          <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-gray-200">Gemini API</span>
+          <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-gray-200">Claude</span>
+          <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-gray-200">Zoho CRM</span>
+          <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm text-gray-200">Webhooks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 2: Modern Dark Grid (Vercel/Linear Style) -->
+  <div class="variant-wrapper bg-[#000]">
+    <div class="variant-title">Варіант 2: Modern Dark Grid (Linear / Vercel Style)</div>
+    <div
+      class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-px bg-[#222] border border-[#222] rounded-xl overflow-hidden">
+      <div class="bg-[#0a0a0a] p-10 col-span-1 md:col-span-8 flex flex-col justify-center">
+        <h2 class="text-2xl font-semibold mb-4 text-white">Сучасний підхід до автоматизації</h2>
+        <p class="text-[#888] text-lg leading-relaxed mb-8">Створення надійних систем без зайвого коду. Від кваліфікації
+          лідів до повної оркестрації складних бізнес-процесів.</p>
+        <div class="grid grid-cols-3 gap-6 border-t border-[#222] pt-6">
+          <div>
+            <div class="text-white font-medium mb-1">Аналіз</div>
+            <div class="text-[#666] text-sm">Пошук втрат часу</div>
+          </div>
+          <div>
+            <div class="text-white font-medium mb-1">Архітектура</div>
+            <div class="text-[#666] text-sm">Проєктування систем</div>
+          </div>
+          <div>
+            <div class="text-white font-medium mb-1">Реалізація</div>
+            <div class="text-[#666] text-sm">No-code + AI</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#0a0a0a] p-10 col-span-1 md:col-span-4">
+        <h3 class="text-lg font-medium text-white mb-6">Технології</h3>
+        <ul class="space-y-4">
+          <li class="flex items-center text-[#888] text-sm">
+            <div class="w-1.5 h-1.5 rounded-full bg-blue-500 mr-3"></div> n8n Automation
+          </li>
+          <li class="flex items-center text-[#888] text-sm">
+            <div class="w-1.5 h-1.5 rounded-full bg-green-500 mr-3"></div> OpenAI / Claude
+          </li>
+          <li class="flex items-center text-[#888] text-sm">
+            <div class="w-1.5 h-1.5 rounded-full bg-yellow-500 mr-3"></div> Zoho CRM / Klaviyo
+          </li>
+          <li class="flex items-center text-[#888] text-sm">
+            <div class="w-1.5 h-1.5 rounded-full bg-purple-500 mr-3"></div> API & Webhooks
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 3: Dark Neumorphism (Soft 3D) -->
+  <div class="variant-wrapper bg-[#09090b]">
+    <div class="variant-title">Варіант 3: Dark Neumorphism (М'який об'єм)</div>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8">
+      <div class="v3-neu p-10 flex-[2]">
+        <h2 class="text-3xl font-bold mb-4 text-gray-200">Філософія розробки</h2>
+        <p class="text-gray-500 mb-8 text-lg">Автоматизація має бути непомітною, але відчутною у результатах. Я створюю
+          воркфлоу, які працюють 24/7 без вихідних.</p>
+        <div class="flex gap-4">
+          <div class="v3-neu p-4 flex-1 text-center text-gray-400 text-sm"><span
+              class="block text-xl font-bold text-white mb-1">01</span>Аудит</div>
+          <div class="v3-neu p-4 flex-1 text-center text-gray-400 text-sm"><span
+              class="block text-xl font-bold text-white mb-1">02</span>Схема</div>
+          <div class="v3-neu p-4 flex-1 text-center text-gray-400 text-sm"><span
+              class="block text-xl font-bold text-white mb-1">03</span>Реліз</div>
+        </div>
+      </div>
+      <div class="v3-neu p-10 flex-[1]">
+        <h3 class="text-xl font-bold mb-6 text-gray-200">Стек</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="v3-neu px-4 py-2 text-sm text-blue-400">n8n</span>
+          <span class="v3-neu px-4 py-2 text-sm text-green-400">OpenAI API</span>
+          <span class="v3-neu px-4 py-2 text-sm text-purple-400">Claude</span>
+          <span class="v3-neu px-4 py-2 text-sm text-yellow-400">Zoho CRM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 4: Brutalist High Contrast -->
+  <div class="variant-wrapper bg-black">
+    <div class="variant-title text-white">Варіант 4: Brutalism (Високий контраст)</div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-0 border-4 border-white">
+      <div
+        class="p-12 border-b-4 md:border-b-0 md:border-r-4 border-white bg-black text-white hover:bg-white hover:text-black transition-colors duration-300">
+        <h2 class="text-5xl font-black mb-6 uppercase tracking-tighter">Методологія<br>Автоматизації</h2>
+        <p class="text-xl font-medium leading-tight">Перетворюємо рутину на алгоритми. Жодної води, лише чистий
+          результат за допомогою AI.</p>
+      </div>
+      <div class="p-12 bg-white text-black flex flex-col justify-between">
+        <h3 class="text-3xl font-black mb-4 uppercase">Технології</h3>
+        <div class="flex flex-wrap gap-2 font-bold text-lg">
+          <span class="border-2 border-black px-3 py-1 uppercase">n8n</span>
+          <span class="border-2 border-black px-3 py-1 uppercase">OpenAI</span>
+          <span class="border-2 border-black px-3 py-1 uppercase">Webhooks</span>
+          <span class="border-2 border-black px-3 py-1 uppercase">Zoho CRM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 5: Vibrant Mesh Gradients -->
+  <div class="variant-wrapper v5-mesh">
+    <div class="variant-title text-purple-300">Варіант 5: Vibrant Mesh Gradients</div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div
+        class="col-span-1 md:col-span-3 bg-black/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-10 shadow-2xl">
+        <h2
+          class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-6">
+          Комплексний Підхід</h2>
+        <p class="text-gray-300 text-lg mb-8 max-w-2xl">Я створюю не просто ботів, а повноцінних цифрових
+          співробітників, які спілкуються з вашими клієнтами, аналізують дані та приймають рішення.</p>
+        <div class="flex gap-4">
+          <div class="bg-white/5 px-6 py-3 rounded-full border border-white/10 text-sm">Аудит</div>
+          <div class="bg-white/5 px-6 py-3 rounded-full border border-white/10 text-sm">Проєктування</div>
+          <div class="bg-white/5 px-6 py-3 rounded-full border border-white/10 text-sm">Реалізація</div>
+        </div>
+      </div>
+      <div
+        class="col-span-1 bg-black/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 shadow-2xl flex flex-col justify-center items-center text-center">
+        <h3 class="text-xl font-bold text-white mb-6">Stack</h3>
+        <div class="space-y-3 w-full">
+          <div
+            class="w-full py-2 bg-gradient-to-r from-blue-600/20 to-transparent border-l-4 border-blue-500 rounded-r text-left pl-3 font-medium">
+            n8n</div>
+          <div
+            class="w-full py-2 bg-gradient-to-r from-green-600/20 to-transparent border-l-4 border-green-500 rounded-r text-left pl-3 font-medium">
+            OpenAI API</div>
+          <div
+            class="w-full py-2 bg-gradient-to-r from-purple-600/20 to-transparent border-l-4 border-purple-500 rounded-r text-left pl-3 font-medium">
+            Claude</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 6: Asymmetrical Bento Cards -->
+  <div class="variant-wrapper bg-[#111]">
+    <div class="variant-title">Варіант 6: Asymmetrical Layout</div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[400px]">
+      <div
+        class="bg-[#1a1a1a] rounded-2xl p-8 col-span-2 row-span-2 border border-[#333] flex flex-col justify-between hover:bg-[#222] transition-colors">
+        <h2 class="text-3xl font-bold text-white">Про мене</h2>
+        <p class="text-gray-400 mt-4 text-lg">Автоматизація процесів для бізнесу будь-якого розміру. Від ідеї до повного
+          впровадження.</p>
+      </div>
+      <div
+        class="bg-[#1a1a1a] rounded-2xl p-6 col-span-1 row-span-1 border border-[#333] flex items-center justify-center hover:border-blue-500 transition-colors">
+        <span class="text-blue-400 font-bold text-xl">Аналітика</span>
+      </div>
+      <div
+        class="bg-[#1a1a1a] rounded-2xl p-6 col-span-1 row-span-1 border border-[#333] flex items-center justify-center hover:border-purple-500 transition-colors">
+        <span class="text-purple-400 font-bold text-xl">n8n</span>
+      </div>
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 col-span-2 row-span-1 border border-[#333] overflow-hidden relative">
+        <h3 class="text-white font-bold mb-2">Технології</h3>
+        <div class="flex gap-2">
+          <span class="bg-black text-xs px-2 py-1 rounded">OpenAI</span>
+          <span class="bg-black text-xs px-2 py-1 rounded">Zoho</span>
+          <span class="bg-black text-xs px-2 py-1 rounded">Webhooks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 7: Cyberpunk / Developer Style -->
+  <div class="variant-wrapper bg-[#050505] font-mono">
+    <div class="variant-title text-green-500">Варіант 7: Cyberpunk / Terminal</div>
+    <div class="max-w-6xl mx-auto v7-cyber p-8">
+      <div class="flex justify-between items-center border-b border-green-500/30 pb-4 mb-6">
+        <span class="text-green-500 text-sm">user@system:~/portfolio/about$ ./execute.sh</span>
+        <span class="text-green-500/50 text-xs">[STATUS: ONLINE]</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-2xl text-white font-bold mb-4">> INITIALIZING_APPROACH...</h2>
+          <p class="text-green-400/80 mb-4">Налаштування безперебійних потоків даних. Усунення людського фактору.
+            Оптимізація часу через no-code платформи.</p>
+          <ul class="text-green-500 space-y-2">
+            <li>[1] SYSTEM_AUDIT</li>
+            <li>[2] ARCHITECTURE_DESIGN</li>
+            <li>[3] DEPLOYMENT</li>
+          </ul>
+        </div>
+        <div class="border-l border-green-500/30 pl-12">
+          <h3 class="text-xl text-white font-bold mb-4">> LOAD_MODULES</h3>
+          <div class="grid grid-cols-2 gap-4 text-green-400/80">
+            <div class="border border-green-500/20 p-2 text-center bg-green-500/5 hover:bg-green-500/20 cursor-pointer">
+              n8n_core</div>
+            <div class="border border-green-500/20 p-2 text-center bg-green-500/5 hover:bg-green-500/20 cursor-pointer">
+              openai_api</div>
+            <div class="border border-green-500/20 p-2 text-center bg-green-500/5 hover:bg-green-500/20 cursor-pointer">
+              webhook_listener</div>
+            <div class="border border-green-500/20 p-2 text-center bg-green-500/5 hover:bg-green-500/20 cursor-pointer">
+              zoho_crm_module</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 8: Elegant Corporate / Fintech -->
+  <div class="variant-wrapper bg-[#f8f9fa] text-gray-900">
+    <div class="variant-title text-gray-400">Варіант 8: Elegant Corporate (Light Theme)</div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
+      <div
+        class="col-span-1 md:col-span-8 bg-white p-12 rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100">
+        <h2 class="text-3xl font-serif text-slate-800 mb-6">Професійна автоматизація бізнесу</h2>
+        <p class="text-slate-600 text-lg leading-relaxed mb-8">Оптимізація витрат та підвищення ефективності через
+          впровадження сучасних AI-агентів у ваші щоденні процеси.</p>
+        <div class="flex divide-x divide-gray-200">
+          <div class="pr-6"><span class="block text-2xl font-bold text-blue-600">01.</span><span
+              class="text-sm font-medium text-slate-500 uppercase tracking-widest">Аудит</span></div>
+          <div class="px-6"><span class="block text-2xl font-bold text-blue-600">02.</span><span
+              class="text-sm font-medium text-slate-500 uppercase tracking-widest">Стратегія</span></div>
+          <div class="pl-6"><span class="block text-2xl font-bold text-blue-600">03.</span><span
+              class="text-sm font-medium text-slate-500 uppercase tracking-widest">Реалізація</span></div>
+        </div>
+      </div>
+      <div
+        class="col-span-1 md:col-span-4 bg-slate-900 text-white p-10 rounded-lg shadow-xl flex flex-col justify-center">
+        <h3 class="text-xl font-medium mb-6 text-slate-300">Технологічний Стек</h3>
+        <div class="flex flex-col gap-3">
+          <span class="border-b border-slate-700 pb-2 text-slate-100">n8n Automation</span>
+          <span class="border-b border-slate-700 pb-2 text-slate-100">OpenAI & LLMs</span>
+          <span class="border-b border-slate-700 pb-2 text-slate-100">CRM Systems API</span>
+          <span class="border-b border-transparent pb-2 text-slate-100">Webhooks</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 9: Playful / Rounded / Friendly -->
+  <div class="variant-wrapper bg-[#121212]">
+    <div class="variant-title">Варіант 9: Playful & Friendly (Заокруглений)</div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div
+        class="col-span-2 bg-[#1f1f1f] rounded-[40px] p-12 text-center flex flex-col items-center justify-center hover:scale-[1.02] transition-transform">
+        <div class="w-16 h-16 bg-blue-500 rounded-full mb-6 flex items-center justify-center text-2xl">🚀</div>
+        <h2 class="text-3xl font-bold mb-4">Робимо бізнес простішим</h2>
+        <p class="text-gray-400 text-lg">Автоматизуємо нудну роботу, щоб ви могли сфокусуватися на головному.</p>
+      </div>
+      <div class="col-span-1 flex flex-col gap-6">
+        <div
+          class="bg-[#eab308] text-black rounded-[40px] p-8 flex-1 flex flex-col items-center justify-center hover:scale-[1.05] transition-transform">
+          <span class="text-4xl mb-2">🤖</span>
+          <span class="font-bold text-xl">AI Агенти</span>
+        </div>
+        <div
+          class="bg-[#8b5cf6] text-white rounded-[40px] p-8 flex-1 flex flex-col items-center justify-center hover:scale-[1.05] transition-transform">
+          <span class="text-4xl mb-2">⚙️</span>
+          <span class="font-bold text-xl">n8n Воркфлоу</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Variant 10: Split Screen Sticky -->
+  <div class="variant-wrapper bg-black border-none">
+    <div class="variant-title">Варіант 10: Split Focus (Розділений екран)</div>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row rounded-3xl overflow-hidden border border-[#333]">
+      <div class="w-full md:w-1/2 bg-[#0a0a0a] p-12 flex flex-col justify-center">
+        <h2 class="text-4xl font-bold mb-6 text-white">Як я працюю?</h2>
+        <p class="text-gray-400 text-lg mb-8">Мій підхід базується на глибокому розумінні бізнес-процесів перед тим, як
+          написати хоч рядок коду чи створити перший вузол в n8n.</p>
+        <button
+          class="bg-white text-black font-bold py-3 px-6 rounded-full w-fit hover:bg-gray-200 transition-colors">Детальніше</button>
+      </div>
+      <div class="w-full md:w-1/2 bg-[#111] p-12">
+        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-6">Використовувані Інструменти</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-[#222] p-6 rounded-2xl border border-[#333] hover:border-white transition-colors">
+            <div class="text-white font-bold mb-1">n8n</div>
+            <div class="text-xs text-gray-500">Оркестратор процесів</div>
+          </div>
+          <div class="bg-[#222] p-6 rounded-2xl border border-[#333] hover:border-white transition-colors">
+            <div class="text-white font-bold mb-1">OpenAI</div>
+            <div class="text-xs text-gray-500">Мозковий центр (LLM)</div>
+          </div>
+          <div class="bg-[#222] p-6 rounded-2xl border border-[#333] hover:border-white transition-colors">
+            <div class="text-white font-bold mb-1">CRM API</div>
+            <div class="text-xs text-gray-500">Зберігання даних (Zoho)</div>
+          </div>
+          <div class="bg-[#222] p-6 rounded-2xl border border-[#333] hover:border-white transition-colors">
+            <div class="text-white font-bold mb-1">AssemblyAI</div>
+            <div class="text-xs text-gray-500">Speech-to-Text</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

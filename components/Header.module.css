@@ -1,0 +1,101 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+.headerInner {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+/* Left: Nav */
+.navLinks {
+  display: flex;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.35rem;
+  border-radius: 100px;
+  width: fit-content;
+  backdrop-filter: blur(10px);
+}
+.navLink {
+  color: #888;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.navLink:hover {
+  color: #ccc;
+}
+.navLink.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Center: Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Right: Actions */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.btnSecondary {
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.btnPrimary {
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btnPrimary:hover {
+  background: #eee;
+}
+
+@media (max-width: 900px) {
+  .headerInner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .navLinks {
+    display: none;
+  }
+  .logo {
+    justify-content: flex-start;
+  }
+}

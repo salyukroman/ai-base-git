@@ -1,0 +1,74 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 15px 40px -10px rgba(139, 92, 246, 0.3);
+}
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.1);
+  margin-bottom: 1.5rem;
+}
+.icon {
+  font-size: 1.5rem;
+}
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+.value {
+  font-size: 0.95rem;
+}
+.valueHighlight {
+  font-size: 0.95rem;
+  color: #a78bfa; /* accent-purple */
+  font-weight: 500;
+}
+.action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: auto;
+}
+.actionIcon {
+  transition: transform 0.2s ease;
+}
+.card:hover .actionIcon {
+  transform: translate(2px, -2px);
+}
