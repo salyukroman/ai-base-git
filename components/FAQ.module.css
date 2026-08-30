@@ -42,6 +42,8 @@
 }
 .answer {
   overflow: hidden;
+}
+.answerInner {
   padding: 0 1.5rem 1.5rem 1.5rem;
   color: var(--text-muted);
   font-size: 0.95rem;

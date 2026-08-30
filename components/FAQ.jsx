@@ -32,7 +32,9 @@ export default function FAQ({ questions }) {
               style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
             >
               <div className={styles.answer}>
-                {q.answer}
+                <div className={styles.answerInner}>
+                  {q.answer}
+                </div>
               </div>
             </div>
           </div>
