@@ -154,9 +154,9 @@ export default function Home() {
             <div className={styles.trustedBy}>
               <span>Довіряють власники бізнесу</span>
               <div className={styles.avatarGroup}>
-                <img className={styles.avatar} src="https://i.pravatar.cc/100?img=68" alt="Client 1" />
-                <img className={styles.avatar} src="https://i.pravatar.cc/100?img=47" alt="Client 2" />
-                <img className={styles.avatar} src="https://i.pravatar.cc/100?img=33" alt="Client 3" />
+                <img className={styles.avatar} src="https://i.pravatar.cc/100?img=68" alt="Client 1" width="100" height="100" loading="lazy" />
+                <img className={styles.avatar} src="https://i.pravatar.cc/100?img=47" alt="Client 2" width="100" height="100" loading="lazy" />
+                <img className={styles.avatar} src="https://i.pravatar.cc/100?img=33" alt="Client 3" width="100" height="100" loading="lazy" />
               </div>
             </div>
             <div className={styles.techLogos}>

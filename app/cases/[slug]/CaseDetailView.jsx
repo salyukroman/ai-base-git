@@ -154,6 +154,33 @@ export default function CaseDetailView({ caseData }) {
               )}
             </motion.div>
 
+            {caseData.loomVideo && (
+              <motion.div variants={fadeUp} className={`${styles.bentoFull} ${styles.glassCard}`}>
+                <h2 className={styles.sectionTitle}>Відеоогляд</h2>
+                <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, marginTop: '2rem' }}>
+                  <iframe 
+                    src={caseData.loomVideo} 
+                    frameBorder="0" 
+                    allowFullScreen 
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', borderRadius: '12px' }}
+                  ></iframe>
+                </div>
+              </motion.div>
+            )}
+
+            {caseData.images && caseData.images.length > 0 && (
+              <motion.div variants={fadeUp} className={`${styles.bentoFull} ${styles.glassCard}`}>
+                <h2 className={styles.sectionTitle}>Скріншоти та Workflow</h2>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
+                  {caseData.images.map((img, idx) => (
+                    <div key={idx} style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
+                      <img src={img} alt={`Скріншот ${idx + 1}`} style={{ width: '100%', height: 'auto', display: 'block' }} loading="lazy" />
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+
           </div>
         </motion.article>
 

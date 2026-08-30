@@ -28,11 +28,13 @@ export default function CaseCard({ title, industry, result, icon, link, id }) {
 
   return link ? (
     <Link href={`/cases/${id}`} className={`${styles.card} glass`}>
-      {content}
+      <article className={styles.cardArticleWrapper}>
+        {content}
+      </article>
     </Link>
   ) : (
-    <div className={`${styles.card} glass`}>
+    <article className={`${styles.card} glass`}>
       {content}
-    </div>
+    </article>
   );
 }

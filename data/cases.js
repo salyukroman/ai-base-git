@@ -25,7 +25,14 @@ export const casesData = [
       { value: "0 помилок", label: "LLM-класифікація" },
       { value: "24/7", label: "Без збільшення штату" }
     ],
-    tech: ["n8n", "AssemblyAI API", "OpenRouter", "Google Sheets API", "Schedule Trigger"]
+    tech: ["n8n", "AssemblyAI API", "OpenRouter", "Google Sheets API", "Schedule Trigger"],
+    loomVideo: "https://www.loom.com/embed/0f60d997fae4447cb6e3fb956b9af21a",
+    images: [
+      "/images/cases/case1_1.png",
+      "/images/cases/case1_2.png",
+      "/images/cases/case1_3.png",
+      "/images/cases/case1_4.png"
+    ]
   },
   {
     id: "lead-qualification",
@@ -54,7 +61,15 @@ export const casesData = [
       { value: "0 хв", label: "Ручна робота менеджера" },
       { value: "3/3", label: "Тест-сценарії пройдено" }
     ],
-    tech: ["n8n", "OpenRouter (GPT-4o-mini)", "Zoho CRM API", "Klaviyo API", "Google Sheets", "Telegram Bot API", "Webhooks"]
+    tech: ["n8n", "OpenRouter (GPT-4o-mini)", "Zoho CRM API", "Klaviyo API", "Google Sheets", "Telegram Bot API", "Webhooks"],
+    loomVideo: "https://www.loom.com/embed/e3310cba0a4b4d6cb3bb170d5aaa48f1",
+    images: [
+      "/images/cases/case2_1.png",
+      "/images/cases/case2_2.png",
+      "/images/cases/case2_3.png",
+      "/images/cases/case2_4.png",
+      "/images/cases/case2_5.png"
+    ]
   },
   {
     id: "sales-reporting",
