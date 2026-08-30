@@ -22,7 +22,7 @@ export default function Header() {
         {/* Right: Actions */}
         <div className={styles.actions}>
           <a href="#cases" className={styles.btnSecondary}>Кейси</a>
-          <a href="mailto:salyuk.roman@gmail.com" className={styles.btnPrimary}>Зв'язатися</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=salyuk.roman@gmail.com" target="_blank" rel="noopener noreferrer" className={styles.btnPrimary}>Зв'язатися</a>
         </div>
       </div>
     </header>

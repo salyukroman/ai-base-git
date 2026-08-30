@@ -159,7 +159,7 @@ export default function CaseDetailView({ caseData }) {
 
         <div className={styles.ctaWrapper}>
           <h3 className="heading-2">Потрібна подібна автоматизація?</h3>
-          <a href="mailto:salyuk.roman@gmail.com" className="btn-primary">Обговорити проєкт</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=salyuk.roman@gmail.com" target="_blank" rel="noopener noreferrer" className="btn-primary">Обговорити проєкт</a>
         </div>
       </main>
 
